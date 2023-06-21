@@ -1,5 +1,6 @@
 import React from 'react'
 import Jokes from './components/Jokes'
+import './App.css'
 
 const App = () => {
   return (
