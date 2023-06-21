@@ -14,3 +14,7 @@ Joke4All is a ReactJS application that fetches random jokes from an API and disp
 
    ```bash
    git clone https://github.com/your-username/joke4all.git
+
+## Deployment
+
+- This app is deployed and can be accessed at: ``` https://joke4all.onrender.com/ ```
