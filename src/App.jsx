@@ -1,8 +1,11 @@
 import React from 'react'
+import Jokes from './components/Jokes'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Jokes />
+    </div>
   )
 }
 
