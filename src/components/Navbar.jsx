@@ -1,7 +1,6 @@
-// src/Navbar.js
-import React, { useState } from 'react';
+// components/Navbar.jsx
+import{ useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import './Navbar.css';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -22,15 +21,12 @@ const Navbar = () => {
                         <li className="nav__item">
                             <NavLink to="/about" className="nav__link" onClick={toggleMenu}>About</NavLink>
                         </li>
-                        <li className="nav__item">
-                            <NavLink to="/contact" className="nav__link" onClick={toggleMenu}>Contact</NavLink>
-                        </li>
                     </ul>
-                    <div className="nav__close" id="nav-close" onClick={toggleMenu}>
+                    <div className="nav__close" id="nav-close" onClick={toggleMenu} aria-label="Close Menu">
                         <span>&times;</span>
                     </div>
                 </div>
-                <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
+                <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu} aria-label="Toggle Menu">
                     <span>&#9776;</span>
                 </div>
             </nav>
