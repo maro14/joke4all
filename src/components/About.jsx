@@ -1,6 +1,4 @@
 // components/About.jsx
-import React from 'react';
-
 const About = () => {
     return (
         <div className="about-container">
@@ -8,8 +6,8 @@ const About = () => {
             <p>
                 Welcome to <strong>Jokes 4 All</strong>, your go-to source for daily doses of laughter. 
                 This web application brings you a collection of the funniest dad jokes, directly sourced 
-                from the icanhazdadjoke API. Whether you're looking for a quick smile or want to share 
-                some humor with friends, we've got you covered.
+                from the icanhazdadjoke API. Whether you&apos;re looking for a quick smile or want to share 
+                some humor with friends, we&apos;ve got you covered.
             </p>
             <h2>Features</h2>
             <ul>
