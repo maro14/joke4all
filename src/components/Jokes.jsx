@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
+const JOKES_API = 'https://icanhazdadjoke.com/slack';
+
 const Jokes = () => {
     const [jokes, setJokes] = useState('');
     const [loading, setLoading] = useState(true); // State to manage loading
@@ -14,7 +16,7 @@ const Jokes = () => {
     const fetchJokes = async () => {
         setLoading(true); // Set loading state to true before fetching data
         try {
-            const response = await axios.get('https://icanhazdadjoke.com/slack');
+            const response = await axios.get(JOKES_API);
             const jokeText = response.data?.attachments?.[0]?.text || 'No joke found.';
             setJokes(jokeText);
             setError(null); // Clear any previous errors
