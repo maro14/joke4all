@@ -22,7 +22,7 @@ const About = () => {
             </p>
             <h2>Contact</h2>
             <p>
-                Have suggestions or feedback? Feel free to reach out to us on our <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer">GitHub page</a>.
+                Have suggestions or feedback? Feel free to reach out to us on our <a href="https://github.com/maro14/joke4all" target="_blank" rel="noopener noreferrer">GitHub page</a>.
             </p>
         </div>
     );
