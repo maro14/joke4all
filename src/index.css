@@ -225,3 +225,45 @@ a:hover {
     color: #1a1a1a;
   }
 }
+
+/* Minimalist Navbar Styles */
+.header--minimal {
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav__logo--minimal {
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+}
+
+.nav__menu--minimal {
+  background: rgba(30, 30, 30, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.nav__toggle--minimal, 
+.nav__close--minimal {
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+}
+
+.nav__link {
+  font-size: 0.95rem;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+}
+
+/* Light mode adjustments */
+@media (prefers-color-scheme: light) {
+  .header--minimal {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav__menu--minimal {
+    background: rgba(245, 245, 245, 0.95);
+  }
+}

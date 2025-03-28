@@ -26,8 +26,8 @@ const Jokes = () => {
         try {
             const response = await axios.get(JOKES_API, {
                 headers: {
-                    'Accept': 'application/json',
-                    'User-Agent': 'Jokes 4 All'
+                    'Accept': 'application/json'
+                    // Removed User-Agent header as browsers don't allow setting it
                 }
             });
             
@@ -44,8 +44,8 @@ const Jokes = () => {
                     Array(CACHE_SIZE).fill().map(() => 
                         axios.get(JOKES_API, {
                             headers: {
-                                'Accept': 'application/json',
-                                'User-Agent': 'Jokes 4 All'
+                                'Accept': 'application/json'
+                                // Removed User-Agent header here as well
                             }
                         })
                     )

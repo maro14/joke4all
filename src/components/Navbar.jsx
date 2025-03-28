@@ -51,14 +51,14 @@ const Navbar = () => {
     const { showMenu, toggleMenu, closeMenu } = useMenu();
 
     return (
-        <header className="header">
+        <header className="header header--minimal">
             <nav className="nav container" role="navigation">
-                <NavLink to="/" className="nav__logo" onClick={closeMenu}>
-                    Jokes 4 All
+                <NavLink to="/" className="nav__logo nav__logo--minimal" onClick={closeMenu}>
+                    J4A
                 </NavLink>
                 
                 <div 
-                    className={`nav__menu ${showMenu ? "show-menu" : ""}`} 
+                    className={`nav__menu nav__menu--minimal ${showMenu ? "show-menu" : ""}`} 
                     id="nav-menu"
                     aria-expanded={showMenu}
                 >
@@ -84,21 +84,21 @@ const Navbar = () => {
                     </ul>
                     
                     <button 
-                        className="nav__close" 
+                        className="nav__close nav__close--minimal" 
                         onClick={closeMenu}
                         aria-label="Close Menu"
                     >
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true">×</span>
                     </button>
                 </div>
 
                 <button 
-                    className="nav__toggle" 
+                    className="nav__toggle nav__toggle--minimal" 
                     onClick={toggleMenu}
                     aria-label="Toggle Menu"
                     aria-expanded={showMenu}
                 >
-                    <span aria-hidden="true">&#9776;</span>
+                    <span aria-hidden="true">≡</span>
                 </button>
             </nav>
         </header>
